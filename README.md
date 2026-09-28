@@ -1,6 +1,8 @@
 # Reservoir Lab
 
-A local Streamlit web app for exploring open reservoir geology, simplified oil–gas–water flow, supervised ML/deep-learning surrogates, and a separate reinforcement-learning teaching experiment.
+A Streamlit web app for exploring open reservoir geology, simplified oil–gas–water flow, supervised ML/deep-learning surrogates, and a separate reinforcement-learning teaching experiment.
+
+Source repository: [Nabilvisi/reservoir-lab](https://github.com/Nabilvisi/reservoir-lab). The repository is private. Hosted deployment is being configured; there is no verified public app URL yet.
 
 ## Start the app
 
@@ -59,4 +61,10 @@ This is a research demonstrator, not a field-qualified reservoir simulator. Gas 
 
 Original OPM deck: copyright Statoil (2015), ODbL 1.0; individual contents DbCL 1.0. The derived geological subset is made available under the same database/content terms, with source provenance and the method for recreating it. Licence texts are in `data/raw/odbl-10.txt` and `data/raw/dbcl-10.txt`. Application code is MIT licensed; this does not replace the data licences.
 
-The app is configured for local use. Public hosting has not been provisioned. A Streamlit-compatible Python host can run `streamlit run app.py`; include the bundled `data` files and install `requirements.txt`.
+## Cloud deployment
+
+For Streamlit Community Cloud, select repository `Nabilvisi/reservoir-lab`, branch `main`, entrypoint `app.py`, and Python 3.12. No secrets are needed. Availability for private-source apps depends on the account's quota.
+
+For a container host such as Railway, the included Dockerfile uses Python 3.12 and binds to the host-provided `PORT`. `railway.json` configures the Streamlit health endpoint and bounded restart retries. The container runs as a non-root user. The Docker image has not yet been built or validated on the hosting platform.
+
+Keep source visibility and hosted app access as separate decisions. Exclude local environments, secrets, runtime logs and raw 77 MB source downloads from deployment. The small bundled open dataset and training data are included. Public hosting has not yet been provisioned.

@@ -1,0 +1,8 @@
+.venv
+.git
+.pytest_cache
+**/__pycache__
+*.log
+.deployment
+.streamlit/secrets.toml
+data/raw/SPE10MODEL2_*.INC

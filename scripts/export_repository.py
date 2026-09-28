@@ -5,7 +5,7 @@ import json
 
 ROOT = Path(__file__).resolve().parents[1]
 paths = [ROOT / name for name in [
-    '.gitignore', '.gitattributes', '.streamlit/config.toml', 'app.py', 'launch.ps1', 'LICENSE',
+    '.gitignore', '.gitattributes', '.dockerignore', 'Dockerfile', 'railway.json', '.streamlit/config.toml', 'app.py', 'launch.ps1', 'LICENSE',
     'METHODS.md', 'README.md', 'requirements.txt', 'requirements-lock.txt', 'VALIDATION.md',
     'data/provenance.json', 'data/spe10_subset.npz', 'data/training.csv',
     'data/training_provenance.json', 'data/validation.json', 'data/raw/odbl-10.txt',
