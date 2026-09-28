@@ -1,0 +1,86 @@
+{
+  "verified_at_utc": "2026-09-28T04:26:57.108663+00:00",
+  "source_commit": "eaa2261683a97027e057c2bc49612ad1c86390b3",
+  "default_scenario": {
+    "pore_volume_m3": 6029.690357248379,
+    "transport_steps": 1298,
+    "phase_balance_error_m3": 6.330935775622493e-12,
+    "saturation_closure_error": 3.852473895449293e-14,
+    "pressure_residual_m3_day": 3.765876499528531e-13,
+    "final_oil_recovery": 0.351010690129604
+  },
+  "training_sha256": "312dd5add2f5da0cdd50b93b9a34eac59f5755721898ebe5614f6f55b00a91be",
+  "model_scores": [
+    {
+      "Model": "Mean baseline",
+      "MAE (m3/day)": 3.690318572209584,
+      "R2": -1.217959852540067,
+      "Water MAE": 3.040689360569777,
+      "Oil MAE": 4.137322700828248,
+      "Gas MAE": 3.8929436552307255,
+      "Max rate closure error": 13.466166093935513
+    },
+    {
+      "Model": "Random forest",
+      "MAE (m3/day)": 1.7648723649987161,
+      "R2": -0.32133372696165347,
+      "Water MAE": 0.9921533047511443,
+      "Oil MAE": 1.426925548980924,
+      "Gas MAE": 2.875538241264079,
+      "Max rate closure error": 11.248268074065113
+    },
+    {
+      "Model": "Deep MLP (64 / 64 / 32)",
+      "MAE (m3/day)": 0.5507323734475641,
+      "R2": 0.9201422365366382,
+      "Water MAE": 0.47670834991099104,
+      "Oil MAE": 0.5476462876061783,
+      "Gas MAE": 0.6278424828255226,
+      "Max rate closure error": 2.8404232904680207
+    }
+  ],
+  "model_warnings": [],
+  "train_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    10,
+    11,
+    12,
+    13,
+    14,
+    16,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    26,
+    27,
+    28,
+    31
+  ],
+  "test_ids": [
+    8,
+    9,
+    15,
+    17,
+    24,
+    25,
+    29,
+    30
+  ],
+  "rl_rewards": {
+    "Fixed 10": 676.5203221943701,
+    "Fixed 20": 158.76328533828075,
+    "Fixed 30": -1016.3663489429644,
+    "Q-learning": 676.5203221943701,
+    "Shut in": 0.0
+  }
+}

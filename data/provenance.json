@@ -1,0 +1,65 @@
+{
+  "dataset": "OPM SPE10 Model 2: contiguous 18 x 30 x 6 subset",
+  "commit": "eaa2261683a97027e057c2bc49612ad1c86390b3",
+  "repository": "https://github.com/OPM/opm-data",
+  "database_license": "ODbL-1.0",
+  "content_license": "DbCL-1.0",
+  "sources": [
+    {
+      "file": "spe10model2/SPE10MODEL2_PERM.INC",
+      "url": "https://raw.githubusercontent.com/OPM/opm-data/eaa2261683a97027e057c2bc49612ad1c86390b3/spe10model2/SPE10MODEL2_PERM.INC",
+      "sha256": "1829e331b64d2efb416fc40f4d68388087a11e4f7ff5ac6866eb8f1a88f8993d"
+    },
+    {
+      "file": "spe10model2/SPE10MODEL2_PHI.INC",
+      "url": "https://raw.githubusercontent.com/OPM/opm-data/eaa2261683a97027e057c2bc49612ad1c86390b3/spe10model2/SPE10MODEL2_PHI.INC",
+      "sha256": "1426c8b40c8a1ffd3cce6653aad264685f100f82018d212ca74c8ae6d0bd1295"
+    },
+    {
+      "file": "spe10model2/SPE10_MODEL2.DATA",
+      "url": "https://raw.githubusercontent.com/OPM/opm-data/eaa2261683a97027e057c2bc49612ad1c86390b3/spe10model2/SPE10_MODEL2.DATA",
+      "sha256": "74723a59446bdcae34e2b4f86c98216c03b1cf67286d1a6e45dc3134b2a96c63"
+    },
+    {
+      "file": "odbl-10.txt",
+      "url": "https://raw.githubusercontent.com/OPM/opm-data/eaa2261683a97027e057c2bc49612ad1c86390b3/odbl-10.txt",
+      "sha256": "1d553feead201a7619788171b43cca12675e82d70b197aa45795986bb8603e72"
+    },
+    {
+      "file": "dbcl-10.txt",
+      "url": "https://raw.githubusercontent.com/OPM/opm-data/eaa2261683a97027e057c2bc49612ad1c86390b3/dbcl-10.txt",
+      "sha256": "3cbfa990f26df856c6a7d3fff3d1f236e3b0165b1e8257ca0d00f15758754f81"
+    },
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/OPM/opm-data/eaa2261683a97027e057c2bc49612ad1c86390b3/README.md",
+      "sha256": "935d5bd3ee7a22786da0de9fef4305f3deb7fa796f5cbb0cb3990ee8e0246849"
+    }
+  ],
+  "shape_zyx": [
+    6,
+    30,
+    18
+  ],
+  "cell_size_m_xyz": [
+    6.096,
+    3.048,
+    0.6096
+  ],
+  "selection_zero_based": {
+    "x": [
+      0,
+      18
+    ],
+    "y": [
+      0,
+      30
+    ],
+    "z": [
+      0,
+      6
+    ]
+  },
+  "derived_sha256": "d5d19c8bab518474bd4f790d54ff0b9cb866ec010131c2eb67f86a84c696ed51",
+  "notes": "Original rock values retained. Cropped domain; new teaching wells and fluid assumptions. Not the full SPE10 benchmark simulation."
+}

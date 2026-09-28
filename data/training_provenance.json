@@ -1,0 +1,16 @@
+{
+  "target_source": "Local simplified three-phase finite-volume simulator, NOT observed production",
+  "rock_sha256": "d5d19c8bab518474bd4f790d54ff0b9cb866ec010131c2eb67f86a84c696ed51",
+  "seed": 42,
+  "scenarios": 32,
+  "snapshots_per_scenario": 25,
+  "simulation_grid_zyx": [
+    3,
+    15,
+    9
+  ],
+  "max_balance_error_m3": 9.777068044058979e-12,
+  "training_sha256": "312dd5add2f5da0cdd50b93b9a34eac59f5755721898ebe5614f6f55b00a91be",
+  "physics_sha256": "764b4bed66e9488fe4defb0e37cd56fac0707b271eb8294be0ae6a29acff7bce",
+  "grid_code_sha256": "f8d95e8518d0b3be669d9aaab279c37041dcc670dc48e6eb9591b26f61ddf794"
+}
